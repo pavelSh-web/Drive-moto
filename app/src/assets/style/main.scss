@@ -1,0 +1,189 @@
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+// @import "utils/reset";
+
+html {
+    font-size: $mainFontSize;
+    color: $mainFontColor;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $mainFont;
+    font-size: $mainFontSize;
+    font-weight: $mainFontWeight;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: $mainFontColor;
+}
+
+button {
+    text-transform: uppercase;
+    color: $mainFontColor;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+
+
+
+._container {
+    max-width: $mw + px;
+    margin: 0 auto;
+    padding: 0px 10px;
+
+    @media (max-width: 1200px) {
+        max-width: 100%;
+    }
+
+    // @media (max-width: $mw2+px) {
+    //     max-width: 750px;
+    // }
+
+    // @media (max-width: $mw3+px) {
+    //     max-width: none;
+    //     padding: 0 10px;
+    // }
+}
+
+.fixed {
+    position: fixed;
+    width: 100%;
+}
+
+
+
+
+.page-section {
+    margin-top: 78px;
+}
+
+// @media (max-width: $mw3+px) {
+//     .page-section {
+//         margin-top: 68px;
+//     }
+// }
+
+.title {
+    margin-bottom: 25px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.favorite-icon {
+    position: relative;
+    width: 24px;
+    height: 22px;
+}
+
+.favorite-icon::before {
+    content: url('../image/icon/favorites.svg');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 22px;
+}
+
+.favorite-icon.added:before {
+    content: url('../image/icon/favorites-added.svg');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 22px;
+}
+
+
+.tabs-inner {}
+
+.tabs {
+    margin-bottom: 25px;
+}
+
+.tab {
+    display: inline-block;
+    font-size: 15px;
+    padding-bottom: 10px;
+
+}
+
+.tab+.tab {
+    margin-left: 50px;
+}
+
+.tab_active {
+    font-weight: 500;
+    border-bottom: 2px solid $main;
+
+}
+
+.tab-content {
+    display: none;
+
+    &_active {
+        display: block;
+    }
+}
+
+
+
+// Подключение своих SCSS файлов
+// @import "modules/"
+
+@import "modules/header.scss";
+@import "modules/banner.scss";
+@import "modules/search.scss";
+@import "modules/categories.scss";
+@import "modules/products.scss";
+@import "modules/promotion.scss";
+@import "modules/footer.scss";
+
+@import "modules/breadcrumbs.scss";
+@import "modules/catalog.scss";
+@import "modules/product-page.scss";
+
+
+
+@import "../libs/css/slick.css";
+@import "../libs/css/ion.rangeSlider.css";
+@import "../libs/css/jquery.formstyler.css";
+@import "../libs/css/jquery.rateyo.css";

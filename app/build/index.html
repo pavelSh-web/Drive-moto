@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drive moto</title>
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="header__container _container">
+                <div class="header__top-inner">
+                    <div class="menu-btn">
+                        <button class="menu-btn__image"></button>
+                    </div>
+                    <nav class="menu">
+                        <ul class="menu__list menu">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Магазины</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Акции</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Доставка и оплата</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="" class="header__logo">
+                        <picture>
+                            <source class="header__logo-image" media="(min-width: 991px)" type="image/svg+xml"
+                                srcset="assets/image/logo.svg">
+                            <img class="header__logo-image" src="assets/image/logo-mobile.svg" alt="">
+                        </picture>
+                    </a>
+                    <div class="header__box">
+                        <b class="header__adress">Москва, ул. Науки 25</b>
+                        <ul class="user__list">
+                            <li class="user__item">
+                                <a href="#" class="user__link"><img class="" src="assets/image/icon/favorites.svg"
+                                        alt=""></a>
+                            </li>
+                            <li class="user__item">
+                                <a href="#" class="user__link"><img class="" src="assets/image/icon/personal-account.svg"
+                                        alt=""></a>
+                            </li>
+                            <li class="user__item">
+                                <a href="#" class="user__link basket">
+                                    <img class="" src="assets/image/icon/basket-black.svg" alt="">
+                                    <span class="basket__num">1</span>
+                                </a>
+                            </li>
+                        </ul>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-mobile">
+            <ul class="menu-mobile__list">
+                <li class="menu-mobile__item">
+                    <a href="#" class="menu-mobile__link menu-mobile__link_profile">Войти</a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="#" class="menu-mobile__link menu-mobile__link_profile">Регистрация</a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="#" class="menu-mobile__link menu-mobile__link_favorite">Избранное</a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="#" class="menu-mobile__link menu-mobile__link_basket">Корзина</a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="#" class="menu-mobile__link menu-mobile__link_shop">Магазины</a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="#" class="menu-mobile__link menu-mobile__link_sale">Акции</a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="#" class="menu-mobile__link menu-mobile__link_delivery">Доставка и оплата</a>
+                </li>
+            </ul>
+            <b class="menu-mobile__address">Москва, <br> ул. Науки 25</b>
+        </div>
+    
+        <div class="header__bottom">
+            <div class="header__container _container">
+                <ul class="menu-categories-list">
+                    <li class="menu-categories-list__item" data-da-rmv data-da-cl="menu-mobile__link,a"
+                        data-da="menu-mobile__list, last, 992">
+                        <a class="menu-categories-list__link active" href="#">Квадроциклы</a>
+                    </li>
+                    <li class="menu-categories-list__item" data-da-rmv data-da-cl="menu-mobile__link,a"
+                        data-da="menu-mobile__list, last, 992">
+                        <a class="menu-categories-list__link" href="#">Катера</a>
+                    </li>
+                    <li class="menu-categories-list__item" data-da-rmv data-da-cl="menu-mobile__link,a"
+                        data-da="menu-mobile__list, last, 992">
+                        <a class="menu-categories-list__link" href="#">Гидроциклы</a>
+                    </li>
+                    <li class="menu-categories-list__item" data-da-rmv data-da-cl="menu-mobile__link,a"
+                        data-da="menu-mobile__list, last, 992">
+                        <a class="menu-categories-list__link" href="#">Лодки</a>
+                    </li>
+                    <li class="menu-categories-list__item" data-da-rmv data-da-cl="menu-mobile__link,a"
+                        data-da="menu-mobile__list, last, 992">
+                        <a class="menu-categories-list__link" href="#">Вездеходы</a>
+                    </li>
+                    <li class="menu-categories-list__item" data-da-rmv data-da-cl="menu-mobile__link,a"
+                        data-da="menu-mobile__list, last, 992">
+                        <a class="menu-categories-list__link" href="#">Снегоходы</a>
+                    </li>
+                    <li class="menu-categories-list__item" data-da-rmv data-da-cl="menu-mobile__link,a"
+                        data-da="menu-mobile__list, last, 992">
+                        <a class="menu-categories-list__link" href="#">Двигатели</a>
+                    </li>
+                    <li class="menu-categories-list__item" data-da-rmv data-da-cl="menu-mobile__link,a"
+                        data-da="menu-mobile__list, last, 992">
+                        <a class="menu-categories-list__link" href="#">Запчасти</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="banner page-section">
+            <div class="banner__container _container">
+                <div class="banner__inner">
+                    <div class="banner__slider">
+                        <div class="banner__slider-box">
+                            <a class="banner__slider-item" href="#">
+                                <img class="" src="assets/image/content/banner_1.jpg" alt="">
+                            </a>
+                            <a class="banner__slider-item" href="#">
+                                <img class="" src="assets/image/content/banner_1.jpg" alt="">
+                            </a>
+                            <a class="banner__slider-item" href="#">
+                                <img class="" src="assets/image/content/banner_1.jpg" alt="">
+                            </a>
+                            <a class="banner__slider-item" href="#">
+                                <img class="" src="assets/image/content/banner_1.jpg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="banner__slider-arrows">
+                            <button class="banner__slider-arrow banner__slider-arrow_prev">
+                                <img src="assets/image/icon/slider-arrow-wh_l.svg" alt="<">
+                            </button>
+                            <button class="banner__slider-arrow banner__slider-arrow_next">
+                                <img src="assets/image/icon/slider-arrow-wh_r.svg" alt=">">
+                            </button>
+                        </div>
+                    </div>
+                    <a class="banner__item promotional-card" href="#">
+                        <div class="promotional-card__top">
+                            <div class="promotional-card__desc">акция</div>
+                            <div class="promotional-card__price">
+                                <div class="promotional-card__price-new">190 000 &#8381;</div>
+                                <div class="promotional-card__price-old price-old">225 000 &#8381;</div>
+                            </div>
+                        </div>
+                        <div class="promotional-card__info">
+                            <img class="promotional-card__image" src="assets/image/content/sale/1.jpg" alt="">
+                            <b class="promotional-card__title">Лодочный мотор Suzuki DF9.9BRS</b>
+                        </div>
+                        <div class="promotional-card__bottom">
+                            <div class="promotional-card__bottom-inner">
+                                <p class="promotional-card__period">
+                                    Акция действует до
+                                    <span class="promotional-card__period-date">31.08.2020</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="search page-section">
+            <div class="search__container _container">
+                <div class="search__inner tabs-inner">
+                    <ul class="search-tabs tabs">
+                        <a class="search-tabs__item search-tabs__item tab tab_active" href="#tab-1">Поиск по номеру</a>
+                        <a class="search-tabs__item search-tabs__item tab" href="#tab-2">Поиск по марке</a>
+                        <a class="search-tabs__item search-tabs__item tab" href="#tab-3">Поиск по названию товара</a>
+                    </ul>
+
+                    <div class="search-content tabs-content">
+                        <div class="search-content__item tab-content tab-content_active" id="tab-1">
+                            <form action="post" class="search-content__form">
+                                <input type="text" class="search-content__input" placeholder="Введите номер">
+                                <button class="search-content__button" type="submit">искать</button>
+                            </form>
+                        </div>
+                        <div class="search-content__item tab-content" id="tab-2">
+                            <form action="post" class="search-content__form">
+                                <input type="text" class="search-content__input" placeholder="Введите марку">
+                                <button class="search-content__button" type="submit">искать</button>
+                            </form>
+                        </div>
+                        <div class="search-content__item tab-content" id="tab-3">
+                            <form action="post" class="search-content__form">
+                                <input type="text" class="search-content__input" placeholder="Введите название товара">
+                                <button class="search-content__button" type="submit">искать</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="categories page-section">
+            <div class="categories__container _container">
+                <div class="categories__inner">
+                    <a class="categories-card" href="#">
+                        <div class="categories-card__info">
+                            <h4 class="categories-card__title">Квадроциклы</h4>
+                            <p class="categories-card__text">Подробее</p>
+                        </div>
+                        <img class="categories-card__image" src="assets/image/content/categories/categories_1.png"
+                            alt="">
+                    </a>
+                    <a class="categories-card" href="#">
+                        <div class="categories-card__info">
+                            <h4 class="categories-card__title">Гидроциклы</h4>
+                            <p class="categories-card__text">Подробее</p>
+                        </div>
+                        <img class="categories-card__image" src="assets/image/content/categories/categories_2.png"
+                            alt="">
+                    </a>
+                    <a class="categories-card" href="#">
+                        <div class="categories-card__info">
+                            <h4 class="categories-card__title">Катера</h4>
+                            <p class="categories-card__text">Подробее</p>
+                        </div>
+                        <img class="categories-card__image" src="assets/image/content/categories/categories_3.png"
+                            alt="">
+                    </a>
+                    <a class="categories-card" href="#">
+                        <div class="categories-card__info">
+                            <h4 class="categories-card__title">Снегоходы</h4>
+                            <p class="categories-card__text">Подробее</p>
+                        </div>
+                        <img class="categories-card__image" src="assets/image/content/categories/categories_4.png"
+                            alt="">
+                    </a>
+                    <a class="categories-card" href="#">
+                        <div class="categories-card__info">
+                            <h4 class="categories-card__title">Вездеходы</h4>
+                            <p class="categories-card__text">Подробее</p>
+                        </div>
+                        <img class="categories-card__image" src="assets/image/content/categories/categories_5.png"
+                            alt="">
+                    </a>
+                    <a class="categories-card" href="#">
+                        <div class="categories-card__info">
+                            <h4 class="categories-card__title">Двигатели</h4>
+                            <p class="categories-card__text">Подробее</p>
+                        </div>
+                        <img class="categories-card__image" src="assets/image/content/categories/categories_6.png"
+                            alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="products products_popular page-section">
+            <div class="products__container _container">
+                <div class="products__wrapper">
+                    <h2 class="products__title title">Популярные товары</h2>
+                    <div class="tabs-inner">
+                        <div class="products-tabs tabs">
+                            <a href="#popular-tab-1" class="products-tabs__item tab tab_active">запчасти</a>
+                            <a href="#popular-tab-2" class="products-tabs__item tab">моторы</a>
+                            <a href="#popular-tab-3" class="products-tabs__item tab">шины</a>
+                            <a href="#popular-tab-4" class="products-tabs__item tab">электроника</a>
+                            <a href="#popular-tab-5" class="products-tabs__item tab">инструменты</a>
+                            <a href="#popular-tab-6" class="products-tabs__item tab">аксессуары </a>
+                        </div>
+                        <div class="products-content tabs-content">
+                            <div class="products-content__item">
+                                <div class="products-slider tab-content tab-content_active" id="popular-tab-1">
+                                    <div class="products-slider__item">
+                                        <div class="product-card product-sale" data-view="grid">
+                                            <button class="product-card__favorite favorite-icon"></button>
+                                            <a href="#" class="product-card__content">
+                                                <p class="product-card__hover-text">посмотреть товар</p>
+                                                <img class="product-card__image"
+                                                    src="assets/image/content/product_1.jpg" alt="">
+                                                <h2 class="product-card__title">Водонепроницаемый Рюкзак</h2>
+                                                <b class="product-card__price">9 800 &#8381;</b>
+                                            </a>
+                                            <b class="product-card__notify-text">нет в наличии</b>
+                                            <a href="#" class="product-card__notify-link">Сообщить о поступлении</a>
+                                            <button class="product-card__basket basket-icon"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="products-slider__item">
+                                        <div class="product-card" data-view="grid">
+                                            <button class="product-card__favorite favorite-icon"></button>
+                                            <a href="#" class="product-card__content">
+                                                <p class="product-card__hover-text">посмотреть товар</p>
+                                                <img class="product-card__image"
+                                                    src="assets/image/content/product_2.jpg" alt="">
+                                                <h2 class="product-card__title">Спасательный жилет BRP Men's Airflow PFD
+                                                </h2>
+                                                <b class="product-card__price">6 900 &#8381;</b>
+                                            </a>
+                                            <b class="product-card__notify-text">нет в наличии</b>
+                                            <a href="#" class="product-card__notify-link">Сообщить о поступлении</a>
+                                            <button class="product-card__basket basket-icon"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="products-slider__item">
+                                        <div class="product-card" data-view="grid">
+                                            <button class="product-card__favorite favorite-icon"></button>
+                                            <a href="#" class="product-card__content">
+                                                <p class="product-card__hover-text">посмотреть товар</p>
+                                                <img class="product-card__image"
+                                                    src="assets/image/content/product_3.jpg" alt="">
+                                                <h2 class="product-card__title">BRP Audio-Premium System</h2>
+                                                <b class="product-card__price">68 000 &#8381;</b>
+                                            </a>
+                                            <b class="product-card__notify-text">нет в наличии</b>
+                                            <a href="#" class="product-card__notify-link">Сообщить о поступлении</a>
+                                            <button class="product-card__basket basket-icon"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="products-slider__item">
+                                        <div class="product-card product-sale product-not-avialable" data-view="grid">
+                                            <button class="product-card__favorite favorite-icon"></button>
+                                            <a href="#" class="product-card__content">
+                                                <p class="product-card__hover-text">посмотреть товар</p>
+                                                <img class="product-card__image"
+                                                    src="assets/image/content/product_4.jpg" alt="">
+                                                <h2 class="product-card__title">Спасательное снаряжение</h2>
+                                                <b class="product-card__price">9 800 &#8381;</b>
+                                            </a>
+                                            <b class="product-card__notify-text">нет в наличии</b>
+                                            <a href="#" class="product-card__notify-link">Сообщить о поступлении</a>
+                                            <button class="product-card__basket basket-icon"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="products-slider__item">
+                                        <div class="product-card" data-view="grid">
+                                            <button class="product-card__favorite favorite-icon"></button>
+                                            <a href="#" class="product-card__content">
+                                                <p class="product-card__hover-text">посмотреть товар</p>
+                                                <img class="product-card__image"
+                                                    src="assets/image/content/product_2.jpg" alt="">
+                                                <h2 class="product-card__title">Водонепроницаемый Рюкзак</h2>
+                                                <b class="product-card__price">9 800 &#8381;</b>
+                                            </a>
+                                            <b class="product-card__notify-text">нет в наличии</b>
+                                            <a href="#" class="product-card__notify-link">Сообщить о поступлении</a>
+                                            <button class="product-card__basket basket-icon"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="products-content__more">Показать еще</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="promotion">
+            <div class="_container">
+                <a href="#" class="promotion__link">
+
+                    <picture>
+                        <source class="promotion__image" srcset="assets/image/content/promotion.jpg"
+                            media="(min-width: 600px)">
+                        <img class="promotion__image" src="assets/image/content/promotion-mobile.jpg">
+                    </picture>
+                </a>
+            </div>
+        </div>
+
+        <section class="products products-addition page-section">
+            <div class="products__container _container">
+                <div class="products__wrapper">
+                    <h2 class="products__title title">С этим товаром покупают</h2>
+                    <div class="tabs-inner">
+                        <div class="products-tabs tabs">
+                            <a href="#addition-tab-1" class="products-tabs__item tab">запчасти</a>
+                            <a href="#addition-tab-2" class="products-tabs__item tab">моторы</a>
+                            <a href="#addition-tab-3" class="products-tabs__item tab">шины</a>
+                            <a href="#addition-tab-4" class="products-tabs__item tab  tab_active">электроника</a>
+                            <a href="#addition-tab-5" class="products-tabs__item tab">инструменты</a>
+                            <a href="#addition-tab-6" class="products-tabs__item tab">аксессуары </a>
+                        </div>
+                        <div class="products-content tabs-content">
+                            <div class="products-content__item">
+                                <div class="products-slider tab-content tab-content_active" id="addition-tab-1">
+                                    <div class="products-slider__item">
+                                        <div class="product-card product-not-avialable product-sale" data-view="grid">
+                                            <button class="product-card__favorite favorite-icon"></button>
+                                            <a href="#" class="product-card__content">
+                                                <p class="product-card__hover-text">посмотреть товар</p>
+                                                <img class="product-card__image"
+                                                    src="assets/image/content/addition_1.jpg" alt="">
+                                                <h2 class="product-card__title">BRP Audio-портативная система</h2>
+                                                <b class="product-card__price">7 000 &#8381;</b>
+                                            </a>
+                                            <b class="product-card__notify-text">нет в наличии</b>
+                                            <a href="#" class="product-card__notify-link">Сообщить о
+                                                поступлении</a>
+                                            <button class="product-card__basket basket-icon"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="products-slider__item">
+                                        <div class="product-card" data-view="grid">
+                                            <button class="product-card__favorite favorite-icon"></button>
+                                            <a href="#" class="product-card__content">
+                                                <p class="product-card__hover-text">посмотреть товар</p>
+                                                <img class="product-card__image"
+                                                    src="assets/image/content/addition_2.jpg" alt="">
+                                                <h2 class="product-card__title">Garmin Echomap Plus 62cv</h2>
+                                                <b class="product-card__price">45 800 &#8381;</b>
+                                            </a>
+                                            <b class="product-card__notify-text">нет в наличии</b>
+                                            <a href="#" class="product-card__notify-link">Сообщить о
+                                                поступлении</a>
+                                            <button class="product-card__basket basket-icon"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="products-slider__item">
+                                        <div class="product-card  product-not-avialable" data-view="grid">
+                                            <button class="product-card__favorite favorite-icon"></button>
+                                            <a href="#" class="product-card__content">
+                                                <p class="product-card__hover-text">посмотреть товар</p>
+                                                <img class="product-card__image"
+                                                    src="assets/image/content/addition_3.jpg" alt="">
+                                                <h2 class="product-card__title">RF D.E.S.S.TM Key</h2>
+                                                <b class="product-card__price">68 000 &#8381;</b>
+                                            </a>
+                                            <b class="product-card__notify-text">нет в наличии</b>
+                                            <a href="#" class="product-card__notify-link">Сообщить о
+                                                поступлении</a>
+                                            <button class="product-card__basket basket-icon"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="products-slider__item">
+                                        <div class="product-card product-sale" data-view="grid">
+                                            <button class="product-card__favorite favorite-icon"></button>
+                                            <a href="#" class="product-card__content">
+                                                <p class="product-card__hover-text">посмотреть товар</p>
+                                                <img class="product-card__image"
+                                                    src="assets/image/content/addition_4.jpg" alt="">
+                                                <h2 class="product-card__title">Мужской костюм 3мм</h2>
+                                                <b class="product-card__price">7 000 &#8381;</b>
+                                            </a>
+                                            <b class="product-card__notify-text">нет в наличии</b>
+                                            <a href="#" class="product-card__notify-link">Сообщить о
+                                                поступлении</a>
+                                            <button class="product-card__basket basket-icon"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="products-slider__item">
+                                        <div class="product-card" data-view="grid">
+                                            <button class="product-card__favorite favorite-icon"></button>
+                                            <a href="#" class="product-card__content">
+                                                <p class="product-card__hover-text">посмотреть товар</p>
+                                                <img class="product-card__image"
+                                                    src="assets/image/content/addition_2.jpg" alt="">
+                                                <h2 class="product-card__title">Garmin Echomap Plus 62cv</h2>
+                                                <b class="product-card__price">9 800 &#8381;</b>
+                                            </a>
+                                            <b class="product-card__notify-text">нет в наличии</b>
+                                            <a href="#" class="product-card__notify-link">Сообщить о
+                                                поступлении</a>
+                                            <button class="product-card__basket basket-icon"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer page-section">
+        <div class="footer__container _container">
+            <div class="footer__inner">
+                <div class="footer__top">
+                    <div class="footer__item footer__item_newslatter">
+                        <h6 class="footer__title">Подпишитесь на нашу рассылку и узнавайте о акция быстрее</h6>
+                        <form class="footer-form">
+                            <input type="text" class="footer-form__input" placeholder="Введите ваш e-mail:">
+                            <button type="submit" class="footer-form__btn">Отправить</button>
+                        </form>
+                    </div>
+                    <div class="footer__item footer__item_mob-tab">
+                        <h6 class="footer__title">Информация</h6>
+                        <ul class="footer-list">
+                            <li class="footer-list__item">
+                                <a href="#" class="footer__link">О компании</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#" class="footer__link">Контакты</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#" class="footer__link">Акции</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#" class="footer__link">Магазины</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__item footer__item_mob-tab">
+                        <h6 class="footer__title">Интернет-магазин</h6>
+                        <ul class="footer-list">
+                            <li class="footer-list__item">
+                                <a href="#" class="footer__link">Доставка и самовывоз</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#" class="footer__link">Оплата</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#" class="footer__link">Возврат-обмен</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#" class="footer__link">Новости</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__item footer__item_social">
+                        <ul class="social-list">
+                            <li class="social-list__item">
+                                <a class="social-list__link" href="#">
+                                    <img src="../assets/image/icon/ig.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="social-list__item">
+                                <a class="social-list__link" href="#">
+                                    <img src="../assets/image/icon/vk.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="social-list__item">
+                                <a class="social-list__link" href="#">
+                                    <img src="../assets/image/icon/fb.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="social-list__item">
+                                <a class="social-list__link" href="#">
+                                    <img src="../assets/image/icon/yt.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <a href="#" class="footer__botoom-link">Договор оферты</a>
+                    <a href="#" class="footer__botoom-link">Политика обработки персональных данных</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+
+<!-- <div class="tabs-inner">
+    <div class="tabs">
+        <a href="#" class="tab tab_acive"></a>
+        <a href="#" class="tab"></a>
+    </div>
+    <div class="tabs-content">
+        <div class="tab-content tab-content_active"></div>
+    </div>
+</div> -->

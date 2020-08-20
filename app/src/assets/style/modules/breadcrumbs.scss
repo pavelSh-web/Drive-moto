@@ -1,0 +1,40 @@
+.breadcrumbs {
+    margin: 45px 0 40px;
+    color: #c4c4c4;
+    font-size: 15px;
+
+    &__list {}
+
+    &__item {
+        display: inline-block;
+        padding-right: 16px;
+        margin-right: 10px;
+        position: relative;
+    }
+
+    &__item:not(:last-child)::after {
+        content: url('../image/icon/breadcrumbs.svg');
+        position: absolute;
+        right: 0;
+        width: 6px;
+        height: 9px;
+    }
+
+
+
+    &__link {
+        color: #c4c4c4;
+    }
+
+    &__link:hover {
+        text-decoration: underline;
+    }
+}
+
+@media (max-width: $mw3+px) {
+    .breadcrumbs__list {
+        white-space: nowrap;
+        overflow-x: scroll;
+        padding-bottom: 10px;
+    }
+}

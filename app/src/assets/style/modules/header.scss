@@ -1,0 +1,367 @@
+.header {
+    &__top {}
+
+    &__container {}
+
+    &__top-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 122px;
+    }
+
+    &__logo {}
+
+    &__logo-image {}
+
+    &__box {
+        display: flex;
+        align-items: center;
+    }
+
+    &__adress {
+        margin-right: 60px;
+        padding-left: 30px;
+        width: 265px;
+        position: relative;
+
+    }
+
+    &__adress_mobile {
+        max-width: 180px;
+        margin: 65px 0 0 150px;
+    }
+
+    &__adress::before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: -10px;
+        left: 0;
+        background-image: url('../image/icon/location.svg');
+        background-repeat: no-repeat;
+    }
+
+    &__bottom {}
+}
+
+.menu {
+
+    &__list {}
+
+    &__item {
+        display: inline-block;
+    }
+
+    &__item {
+        padding-right: 40px;
+    }
+
+    &__link {
+        font-weight: 700;
+    }
+
+    &__link:hover {
+        color: $main;
+        text-decoration: underline;
+    }
+}
+
+.user {
+
+    &__list {
+        margin-right: 22px;
+    }
+
+    &__item {
+        display: inline-block;
+    }
+
+    &__item+&__item {
+        padding-left: 10px;
+    }
+
+    &__link {}
+}
+
+.basket {
+    position: relative;
+
+    &__num {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transform: translateX(80%);
+        display: inline-block;
+        padding: 0.4em 0.8em;
+        font-size: 10px;
+        font-weight: 500;
+        color: $light;
+        border-radius: 1em;
+        background-color: $main;
+    }
+}
+
+.menu-categories-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 2.65em;
+    background-color: $elementBg;
+
+    &__item {
+        position: relative;
+    }
+
+    &__link {
+        display: block;
+        font-weight: 500;
+        color: rgba($mainFontColor, 0.8);
+        padding: 0.85em 0px;
+        transition: all 0.1s ease;
+    }
+
+    &__link:hover {
+        color: #000;
+    }
+
+    &__link::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 0;
+        bottom: 0;
+        left: auto;
+        right: 0;
+        background-color: $main;
+        height: 3px;
+
+        transition: all 0.35s;
+    }
+
+    &__link:hover::before {
+        right: auto;
+        left: 0;
+        width: 100%;
+    }
+}
+
+.menu-btn {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    display: none;
+}
+
+.menu-btn__image {
+    width: 34px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: $mainFontColor;
+    padding: 0 8px;
+    display: block;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+.menu-btn__image::after {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    content: '';
+    display: block;
+    width: 34px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: $mainFontColor;
+}
+
+.menu-btn__image::before {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    content: '';
+    display: block;
+    width: 34px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: $mainFontColor;
+}
+
+.menu-mobile {
+    position: absolute;
+    z-index: 1000;
+    width: 0;
+    background-color: $light;
+    box-shadow: none;
+    transform: translateX(-100%);
+    transition: transform 0.2s;
+    opacity: 0;
+    visibility: hidden;
+
+
+
+    &__address {
+        display: block;
+        max-width: 181px;
+        padding: 60px 0px 150px 44px;
+    }
+
+    &__list {}
+
+    &__item {
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+
+    &__link::before {
+        margin-left: 10px;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+    }
+
+    &__link {
+        width: 100%;
+        padding: 40px 0px 0px 53px;
+        color: $mainFontColor;
+        font-weight: 400;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+        &_profile::before {
+            content: url('../image/icon/personal-account.svg');
+        }
+
+        &_favorite::before {
+            content: url('../image/icon/favorites.svg');
+        }
+
+        &_basket::before {
+            content: url('../image/icon/basket-black.svg');
+        }
+
+        &_shop::before {
+            content: url('../image/icon/shop-icon.svg');
+        }
+
+        &_sale::before {
+            content: url('../image/icon/sale-icon.svg');
+        }
+
+        &_delivery::before {
+            content: url('../image/icon/delivery-icon.svg');
+        }
+    }
+}
+
+
+@media (max-width: 1100px) {
+    .header {
+        &__adress {
+            margin-right: 20px;
+        }
+    }
+
+    .menu {
+
+        &__item {
+            padding-right: 20px;
+        }
+    }
+}
+
+@media (max-width: 598px) {
+    .header__adress {
+        display: none;
+    }
+}
+
+@media (max-width: $mw2+px) {
+    .header {
+
+        &__top {}
+
+        &__container {}
+
+        &__top-inner {
+            min-height: 70px;
+        }
+
+        &__logo {}
+
+        &__logo-image {}
+
+        &__box {}
+
+        &__adress {
+            font-size: 16px;
+            width: 225px;
+        }
+
+        &__bottom {
+            display: none;
+        }
+    }
+
+    .menu {
+        display: none;
+
+        &__list {}
+
+        &__item {}
+
+        &__link {}
+    }
+
+    .user {
+
+        &__list {}
+
+        &__item {}
+
+        &__link {}
+    }
+
+    .basket {
+
+        &__num {}
+    }
+
+    .menu-categories-list {
+
+        &__item {}
+
+        &__link {}
+    }
+
+
+    .menu-btn {
+        display: block;
+    }
+
+    .menu-mobile {
+
+        &.active {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            transform: translateX(0);
+            width: 243px;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        &__list {}
+
+        &__item {}
+
+        &__link::before {}
+
+        &__link {}
+    }
+
+}

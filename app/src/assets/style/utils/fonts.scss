@@ -1,0 +1,25 @@
+
+@import "mixins";
+
+// Base OpenSans:
+// @include font-face("OpenSans", "/assets/fonts/OpenSans/opensans");
+
+
+// Italic OpenSans:
+// @include font-face("OpenSans", "/assets/fonts/OpenSans/opensansItalic", 400, italic);
+
+@include font-face("SFProDisplay", "/assets/fonts/SFProDisplay-Regular", 400);
+@include font-face("SFProDisplay", "/assets/fonts/SFProDisplay-Medium", 500);
+@include font-face("SFProDisplay", "/assets/fonts/SFProDisplay-Semibold", 600);
+@include font-face("SFProDisplay", "/assets/fonts/SFProDisplay-Bold", 700);
+
+@include font-face("Barlow", "/assets/fonts/Barlow-Regular", 400);
+@include font-face("Barlow", "/assets/fonts/Barlow-Bold", 700);
+
+@include font-face("ProximaNova", "/assets/fonts/ProximaNova-Bold", 700);
+
+@include font-face("Staatliches", "/assets/fonts/Staatliches-Bold", 700);
+//Google Fonts
+//&subset=cyrillic-ext
+
+

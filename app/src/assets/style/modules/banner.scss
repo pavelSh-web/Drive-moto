@@ -1,0 +1,286 @@
+.banner {
+    &__container {}
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__slider {
+        width: 870px;
+        min-height: 400px;
+        position: relative;
+    }
+
+    &__slider .slick-dots {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-bottom: 35px;
+
+        button {
+            font-size: 0;
+            padding: 0;
+            width: 13px;
+            height: 13px;
+            background-color: transparent;
+            border-radius: 50%;
+            border: 1px solid $light;
+        }
+
+        li {
+            padding: 5px;
+            display: inline-block;
+
+        }
+
+        li.slick-active button {
+            background-color: $light;
+
+        }
+    }
+
+    &__slider-box {}
+
+    &__slider-arrows {}
+
+    &__slider-arrow {
+        padding: 0 23px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 100%;
+
+        &_prev {
+            left: 0;
+        }
+
+        &_next {
+            right: 0;
+        }
+    }
+
+
+
+    &__slider-item {
+
+        img,
+        picture {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+    }
+
+    &__item {}
+}
+
+.promotional-card {
+    min-width: 265px;
+    min-height: 400px;
+    text-align: center;
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    transition: box-shadow 0.2s ease;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-basis: 17%;
+
+    }
+
+    &__desc {
+        font-family: 'ProximaNova';
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 1.2px;
+        color: $light;
+        background-color: $main;
+        padding: 0.6em 1.6em;
+        text-transform: uppercase;
+
+    }
+
+    &__price {
+        font-family: 'Barlow', sans-serif;
+        text-align: right;
+
+        &-new {
+            display: block;
+            font-weight: 700;
+            font-size: 27px;
+            padding-right: 10px;
+            color: $main;
+        }
+
+        &-old {}
+
+        &-old::after {}
+    }
+
+    &__info {
+        flex-basis: 57%;
+    }
+
+    &__image {
+        height: 182px;
+        object-fit: contain;
+    }
+
+    &__title {
+        margin: 0 auto;
+        max-width: 210px;
+        display: block;
+        padding: 7px 0px;
+
+    }
+
+    &__bottom {
+        background-color: $elementBg;
+        flex: 0 4 26%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    &__period {}
+
+    &__period-date {
+        font-family: 'Barlow', sans-serif;
+        font-weight: 700;
+        color: $main;
+        display: block;
+    }
+}
+
+.price-old {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+    padding: 0 5px;
+    color: #c4c4c4;
+    overflow: hidden;
+}
+
+.price-old::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #c4c4c4;
+    transform: rotate(-13deg);
+    transform-origin: bottom left;
+}
+
+.promotional-card:hover {
+    box-shadow: 0.13em 0.13em 0.86em rgba(50, 50, 50, 0.25);
+}
+
+.promotional-card:hover .promotional-card__title {
+    color: $main;
+}
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    .banner {
+
+        &__inner {
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        &__slider {
+            width: calc(65vw);
+        }
+
+        &__slider-item {
+
+            img,
+            picture {
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .banner {
+        &__slider {
+            min-height: 300px;
+        }
+
+        &__slider-item {
+
+            img,
+            picture {
+                height: 300px;
+            }
+        }
+
+        &__slider .slick-dots {
+            padding-bottom: 20px;
+
+            button {
+                width: 11px;
+                height: 11px;
+            }
+        }
+    }
+}
+
+@media (max-width: $mw2+px) {
+    .banner {
+        margin-top: 0;
+
+        &__inner {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__slider {
+            width: 100%;
+            margin: 0px 0px 20px 0px;
+
+        }
+
+        &__slider-arrow {
+            visibility: hidden;
+        }
+    }
+
+    .banner__container {
+        padding: 0;
+    }
+
+}
+
+
+@media (max-width: $mw4+px) {
+    .banner {
+        &__slider {
+            min-height: 200px;
+        }
+
+        &__slider-item {
+
+            img,
+            picture {
+                height: 200px;
+            }
+        }
+    }
+
+}

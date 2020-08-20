@@ -1,0 +1,22 @@
+{
+  "name": "gulp",
+  "description": "",
+  "main": "gulpfile.js",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/src/bower_components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "slick-carousel": "^1.8.1",
+    "ion-rangeslider": "git://github.com/IonDen/ion.rangeSlider#^2.3.1",
+    "jquery.form-styler": "git://github.com/Dimox/jQueryFormStyler#^2.0.2",
+    "rateyo": "^2.3.4"
+  },
+  "devDependencies": {}
+}
